@@ -8,7 +8,7 @@ class OwClient
     private
 
     def api_key
-      "?key=#{ENV['ow_api_key']}"
+      "?appid=#{ENV['ow_api_key']}"
     end
 
     def parse(response)
