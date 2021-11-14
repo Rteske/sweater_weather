@@ -1,8 +1,8 @@
-class MqService
+class OwService
   class << self
     def get_forecast(coords)
-      response = OwClient.fetch('/geocoding/v1/address', { lat: coords[:lat], lon: coords[:lon] })
-      response
+      body = { lat: coords[:lat], lon: coords[:lng], exclude: 'minutely,alerts', units: 'imperial' }
+      OwClient.fetch('/data/2.5/onecall', body)
     end
   end
 end
