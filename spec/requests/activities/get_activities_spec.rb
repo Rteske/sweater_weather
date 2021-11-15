@@ -3,12 +3,12 @@ require 'rails_helper'
 RSpec.describe 'GET api/v1/activities' do
   describe 'return value' do
     it 'returns certain json format' do
-      stub_request(:get, "http://www.mapquestapi.com/geocoding/v1/address?key=#{ENV['mq_api_key']}&location=Washington,DC").to_return(body: File.read(File.join('spec', 'fixtures', 'mq_washington_dc.json')))
-      stub_request(:get, "https://api.openweathermap.org/data/2.5/onecall?appid=#{ENV['ow_api_key']}&exclude=minutely,alerts&lat=38.892062&lon=-77.019912&units=imperial").to_return(body: File.read(File.join('spec', 'fixtures', 'ow_washington_dc.json')))
-      stub_request(:get, "http://www.boredapi.com/api/activity?type=busywork").to_return(body: File.read(File.join('spec', 'fixtures', 'bored_busywork_washington_dc.json')))
-      stub_request(:get, "http://www.boredapi.com/api/activity?type=relaxation").to_return(body: File.read(File.join('spec', 'fixtures', 'bored_busywork_washington_dc.json')))
+      stub_request(:get, "http://www.mapquestapi.com/geocoding/v1/address?key=#{ENV['mq_api_key']}&location=Atlanta,GA").to_return(body: File.read(File.join('spec', 'fixtures', 'mq_atlanta_ga.json')))
+      stub_request(:get, "https://api.openweathermap.org/data/2.5/onecall?appid=#{ENV['ow_api_key']}&exclude=minutely,alerts&lat=33.748547&lon=-84.391502&units=imperial").to_return(body: File.read(File.join('spec', 'fixtures', 'ow_atlanta_ga.json')))
+      stub_request(:get, "http://www.boredapi.com/api/activity?type=busywork").to_return(body: File.read(File.join('spec', 'fixtures', 'bored_cooking.json')))
+      stub_request(:get, "http://www.boredapi.com/api/activity?type=relaxation").to_return(body: File.read(File.join('spec', 'fixtures', 'bored_relaxation.json')))
 
-      get "/api/v1/activities", params: { destination: 'Washington,DC' }
+      get "/api/v1/activities", params: { destination: 'Atlanta,GA' }
 
       expect(response).to be_successful
 
