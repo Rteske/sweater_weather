@@ -7,10 +7,21 @@ RSpec.describe MqService do
 
       state = 'Washington,DC'
       results = MqService.get_coords(state)
-      
+
       expect(results).to be_a(Hash)
       expect(results).to have_key(:lat)
       expect(results).to have_key(:lng)
+    end
+
+    it '#get_route(from, to)' do
+      stub_request(:get, "http://www.mapquestapi.com/directions/v2/route?from=Reno,NV&key=#{ENV['mq_api_key']}&to=Sacremento,CA").to_return(body: File.read(File.join('spec', 'fixtures', 'mq_reno_to_sacremento.json')))
+      from = 'Reno,NV'
+      to = 'Sacremento,CA'
+
+      results = MqService.get_route(from, to)
+      expect(results).to be_a(Hash)
+      expect(results).to have_key(:route)
+      expect(results[:route]).to have_key(:formattedTime)
     end
   end
 end
