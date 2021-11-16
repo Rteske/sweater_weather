@@ -6,10 +6,10 @@ class Api::V1::SessionsController < ApplicationController
       user.api_key = user.api_keys.first.token
       render json: Api::V1::UserSerializer.new(user)
     else
-      render json: 'bad credentials', status: 401
+      render json: 'bad credentials', status: :unauthorized
     end
   rescue
-    render json: 'bad credentials', status: 401
+    render json: 'bad credentials', status: :unauthorized
   end
 
   private

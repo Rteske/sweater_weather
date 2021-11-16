@@ -5,6 +5,7 @@ class Api::V1::RoadTripFacade
 
       travel_time = route_data[:route][:formattedTime]
       travel_hours = travel_time.split(':')
+
       travel_hours = travel_hours.first.to_i
 
       departure_forecast_data = OwService.get_current_and_hourly_forecast(route_data[:route][:locations].first[:latLng])
