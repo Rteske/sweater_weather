@@ -8,6 +8,8 @@ class Api::V1::SessionsController < ApplicationController
     else
       render json: 'bad credentials', status: 401
     end
+  rescue
+    render json: 'bad credentials', status: 401
   end
 
   private

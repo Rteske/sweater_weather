@@ -31,5 +31,15 @@ RSpec.describe 'POST api/v1/sessions' do
       expect(response.status).to eq(401)
       expect(response.body).to eq('bad credentials')
     end
+
+    it 'will return an invalid credentials 401 for wrong email' do
+      user1 = User.create!({ email: 'ryan@gmail.com', password: 'doggy', password_confirmation: 'doggy'})
+      user1_api_key = user1.api_keys.create!({ token: SecureRandom.hex })
+      post '/api/v1/sessions', params: { email: 'ryailcom', password: 'doggy' }
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(401)
+      expect(response.body).to eq('bad credentials')
+    end
   end
 end
