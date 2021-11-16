@@ -7,4 +7,8 @@ RSpec.describe User do
     it { should allow_value('ryan@gmail.com').for(:email) }
     it { should_not allow_value('fuasd^6').for(:email) }
   end
+
+  describe 'realationships' do
+    it { should have_many(:api_keys) }
+  end
 end

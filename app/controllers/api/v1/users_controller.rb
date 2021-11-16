@@ -8,7 +8,7 @@ class Api::V1::UsersController < ApplicationController
       json_string = Api::V1::UserSerializer.new(user).serializable_hash.to_json
       render json: json_string
     else
-      render json: user.error.messages
+      render json: user.errors.messages, status: 400
     end
   end
 
