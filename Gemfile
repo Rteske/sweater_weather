@@ -28,6 +28,7 @@ gem 'fast_jsonapi'
 gem 'figaro'
 gem 'faraday'
 gem 'bcrypt'
+gem 'jsonapi-serializer'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
