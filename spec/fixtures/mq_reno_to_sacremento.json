@@ -1,0 +1,360 @@
+{
+    "route": {
+        "hasTollRoad": false,
+        "hasBridge": true,
+        "boundingBox": {
+            "lr": {
+                "lng": -119.813286,
+                "lat": 38.582088
+            },
+            "ul": {
+                "lng": -121.510551,
+                "lat": 39.535042
+            }
+        },
+        "distance": 134.921,
+        "hasTimedRestriction": false,
+        "hasTunnel": false,
+        "hasHighway": true,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "02:08:47",
+        "sessionId": "6193eb7b-03e1-5f21-02b4-336a-02292b7eee71",
+        "hasAccessRestriction": false,
+        "realTime": 7688,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 6.15,
+        "legs": [
+            {
+                "hasTollRoad": false,
+                "hasBridge": true,
+                "destNarrative": "",
+                "distance": 134.921,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": true,
+                "index": 0,
+                "formattedTime": "02:08:47",
+                "origIndex": 2,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": -1,
+                "time": 7727,
+                "hasUnpaved": false,
+                "origNarrative": "Go west on I-80 W (Crossing into California).",
+                "maneuvers": [
+                    {
+                        "distance": 0.578,
+                        "streets": [
+                            "N Virginia St",
+                            "US-395 Bus N"
+                        ],
+                        "narrative": "Start out going north on N Virginia St/US-395 Bus N toward E Douglas Aly.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -119.813286,
+                            "lat": 39.526901
+                        },
+                        "index": 0,
+                        "formattedTime": "00:01:41",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "395",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=395&d=NORTH",
+                                "direction": 1
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=N57cjSEnc5O8atjuGzsRix8gvFVRAks8&size=225,160&locations=39.52690124511719,-119.81328582763672|marker-1||39.53504180908203,-119.81575775146484|marker-2||&center=39.53097152709961,-119.81452178955078&defaultMarker=none&zoom=10&rand=-693617223&session=6193eb7b-03e1-5f21-02b4-336a-02292b7eee71",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 101,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0.081,
+                        "streets": [
+                            "E 8th St"
+                        ],
+                        "narrative": "Turn left onto E 8th St.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -119.815758,
+                            "lat": 39.535042
+                        },
+                        "index": 1,
+                        "formattedTime": "00:00:17",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=N57cjSEnc5O8atjuGzsRix8gvFVRAks8&size=225,160&locations=39.53504180908203,-119.81575775146484|marker-2||39.53478240966797,-119.81723022460938|marker-3||&center=39.534912109375,-119.81649398803711&defaultMarker=none&zoom=15&rand=-693617223&session=6193eb7b-03e1-5f21-02b4-336a-02292b7eee71",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 17,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 130.467,
+                        "streets": [
+                            "I-80 W"
+                        ],
+                        "narrative": "Merge onto I-80 W (Crossing into California).",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -119.81723,
+                            "lat": 39.534782
+                        },
+                        "index": 2,
+                        "formattedTime": "02:02:17",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "80",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=80&d=WEST",
+                                "direction": 7
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=N57cjSEnc5O8atjuGzsRix8gvFVRAks8&size=225,160&locations=39.53478240966797,-119.81723022460938|marker-3||38.628662109375,-121.51055145263672|marker-4||&center=39.081722259521484,-120.66389083862305&defaultMarker=none&zoom=4&rand=-693617223&session=6193eb7b-03e1-5f21-02b4-336a-02292b7eee71",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 7337,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 3.3,
+                        "streets": [
+                            "I-5 S",
+                            "CA-99 S",
+                            "CA-16 E"
+                        ],
+                        "narrative": "Merge onto I-5 S/CA-99 S/CA-16 E via EXIT 86 toward Los Angeles.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -121.510551,
+                            "lat": 38.628662
+                        },
+                        "index": 3,
+                        "formattedTime": "00:03:33",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "5",
+                                "type": 1,
+                                "url": "http://icons.mqcdn.com/icons/rs1.png?n=5&d=SOUTH",
+                                "direction": 4
+                            },
+                            {
+                                "extraText": "",
+                                "text": "99",
+                                "type": 504,
+                                "url": "http://icons.mqcdn.com/icons/rs504.png?n=99&d=SOUTH",
+                                "direction": 4
+                            },
+                            {
+                                "extraText": "",
+                                "text": "16",
+                                "type": 504,
+                                "url": "http://icons.mqcdn.com/icons/rs504.png?n=16&d=EAST",
+                                "direction": 8
+                            },
+                            {
+                                "extraText": "",
+                                "text": "86",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=86&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=N57cjSEnc5O8atjuGzsRix8gvFVRAks8&size=225,160&locations=38.628662109375,-121.51055145263672|marker-4||38.58735656738281,-121.50371551513672|marker-5||&center=38.608009338378906,-121.50713348388672&defaultMarker=none&zoom=8&rand=-693617223&session=6193eb7b-03e1-5f21-02b4-336a-02292b7eee71",
+                        "transportMode": "AUTO",
+                        "attributes": 1152,
+                        "time": 213,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.495,
+                        "streets": [
+                            "J St"
+                        ],
+                        "narrative": "Merge onto J St via EXIT 519B toward Downtown.",
+                        "turnType": 10,
+                        "startPoint": {
+                            "lng": -121.503716,
+                            "lat": 38.587357
+                        },
+                        "index": 4,
+                        "formattedTime": "00:00:59",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "519B",
+                                "type": 1001,
+                                "url": "http://icons.mqcdn.com/icons/rs1001.png?n=519B&d=RIGHT",
+                                "direction": 0
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=N57cjSEnc5O8atjuGzsRix8gvFVRAks8&size=225,160&locations=38.58735656738281,-121.50371551513672|marker-5||38.582088470458984,-121.5001220703125|marker-6||&center=38.5847225189209,-121.50191879272461&defaultMarker=none&zoom=11&rand=-693617223&session=6193eb7b-03e1-5f21-02b4-336a-02292b7eee71",
+                        "transportMode": "AUTO",
+                        "attributes": 1024,
+                        "time": 59,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_merge_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "Welcome to SACRAMENTO, CA.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -121.500122,
+                            "lat": 38.582088
+                        },
+                        "index": 5,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -119.813286,
+                    "lat": 39.526901
+                },
+                "adminArea4": "Washoe County",
+                "adminArea5": "Reno",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "NV",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 60850453,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -119.813283,
+                    "lat": 39.526903
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -121.500122,
+                    "lat": 38.582088
+                },
+                "adminArea4": "Sacramento County",
+                "adminArea5": "Sacramento",
+                "postalCode": "",
+                "adminArea1": "US",
+                "adminArea3": "CA",
+                "type": "s",
+                "sideOfStreet": "N",
+                "geocodeQualityCode": "A5XAX",
+                "adminArea4Type": "County",
+                "linkId": 28529735,
+                "street": "",
+                "adminArea5Type": "City",
+                "geocodeQuality": "CITY",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -121.50012,
+                    "lat": 38.582087
+                }
+            }
+        ],
+        "time": 7727,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            1
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2021 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2021 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}
