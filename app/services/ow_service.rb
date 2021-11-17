@@ -5,8 +5,8 @@ class OwService
       OwClient.fetch('/data/2.5/onecall', body)
     end
 
-    def get_hourly_forecast(coords)
-      body = { lat: coords[:lat], lon: coords[:lng], exclude: 'current,daily,minutely,alerts', units: 'imperial' }
+    def get_current_and_daily_forecast(coords)
+      body = { lat: coords[:lat], lon: coords[:lng], exclude: 'hourly,minutely,alerts', units: 'imperial' }
       OwClient.fetch('/data/2.5/onecall', body)
     end
 
